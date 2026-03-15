@@ -1,0 +1,11 @@
+services:
+  hackazon:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: composerizeallthethings/hackazon
+    container_name: hackazon
+    restart: always
+    env_file: "hackazon.env"
+    ports:
+      - "80:80" # Exposed port different than 80 leads to Referer issue
