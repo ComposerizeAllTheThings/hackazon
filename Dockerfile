@@ -10,6 +10,7 @@ RUN apt update \
     libapache2-mod-php5 \
     mysql-client \
     mysql-server \
+    php5-cli \
     php5-ldap \
     php5-mysql \
     python-setuptools \
